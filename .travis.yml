@@ -2,10 +2,10 @@ language: CSharp
 mono:
  - latest
 install:
+ - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
+ - sudo apt-get update -q
+ - sudo apt-get upgrade -y
  - sudo apt-get install libunwind7
- - sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
- - sudo apt-get update
- - sudo apt-get upgrade
  - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version 1.0.0-preview1-002702 --install-dir ~/dotnet
  - sudo ln -s ~/dotnet/dotnet /usr/local/bin
  - cd src/Pokecalc
