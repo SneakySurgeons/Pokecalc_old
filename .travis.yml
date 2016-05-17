@@ -1,9 +1,10 @@
-language: CSharp
-mono:
- - latest
+dist: trusty
 install:
- - curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh
- - dnvm upgrade
- - dnu restore
+ - sudo apt-get install libunwind8
+ - curl -sSL https://raw.githubusercontent.com/dotnet/cli/rel/1.0.0/scripts/obtain/dotnet-install.sh | bash /dev/stdin --version 1.0.0-preview1-002702 --install-dir ~/dotnet
+ - sudo ln -s ~/dotnet/dotnet /usr/local/bin
+ - dotnet restore src/Pokecalc
+ - dotnet restore src/Pokecalc.Test
 script:
- - dnu build
+ - dotnet build src/Pokecalc
+ - dotnet test src/Pokecalc.Test
