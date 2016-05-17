@@ -6,7 +6,7 @@ This repository contains the code for the pokecalc site.
 
 ## Contributing
 
-Please refer to [CONTRIBUTING](https://github.com/SneakySurgeons/Pokecalc/blob/master/README.md) for notes about contributions.
+Please refer to [CONTRIBUTING](https://github.com/SneakySurgeons/Pokecalc/blob/master/Contributing.md) for notes about contributions.
 
 ## Getting Started
 
