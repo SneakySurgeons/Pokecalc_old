@@ -1,6 +1,6 @@
 # Pokecalc
 
-[![Travis](https://img.shields.io/travis/SneakySurgeons/Pokecalc.svg?maxAge=2592000)](https://travis-ci.org/SneakySurgeons/Pokecalc)
+[![Build Status](https://travis-ci.org/SneakySurgeons/Pokecalc.svg?branch=master)](https://travis-ci.org/SneakySurgeons/Pokecalc)
 
 This repository contains the code for the pokecalc site.
 
